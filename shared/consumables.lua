@@ -7,80 +7,317 @@ Config.Consumables = {
     beer = { 			        emote = "beer", 		canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10,20), canOD = true }},
     whiskey = { 		        emote = "whiskey",  	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10,20), canOD = true }},
     sandwich = {                emote = "sandwich", 	canRun = false, 	time = math.random(5000, 6000), stress = 0, heal = 0, armor = 0, type = "food", stats = { hunger = 20, }},
-
     twerks_candy = {            emote = "egobar", 		canRun = true, 		time = math.random(5000, 6000), stress = 0, heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,15), }},
     snikkel_candy = {           emote = "egobar", 		canRun = true, 		time = math.random(5000, 6000), stress = 0, heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,15), }},
-
     coffee = {                  emote = "coffee", 		canRun = false, 	time = math.random(5000, 6000), stress = 0, heal = 0, armor = 0, type = "drink", stats = { time = 10000, thirst = math.random(10,15), }},
     water_bottle = {            emote = "drink", 		canRun = false, 	time = math.random(5000, 6000), stress = 0, heal = 0, armor = 0, type = "drink", stats = { thirst = 20, }},
     tosti = {                   emote = "sandwich", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,15), }},
-
     kurkakola = { 		        emote = "ecola", 		canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10,20), }},
 
-    --[[----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    -- Items that effect status changes, like bleeding can cause problems as they are all handled in their own scripts
-    -- Testing these but they may be best left handled by default scripts
-    ["ifaks"] = { 			emote = "oxy", 		time = math.random(5000, 6000), stress = math.random(12, 24), heal = 10, armor = 0, type = "drug", stats = { effect = "heal", amount = 6, widepupils = false, canOD = false } },
-    ["bandage"] = { 		emote = "oxy", 		time = math.random(5000, 6000), stress = 0, heal = 10, armor = 0, type = "drug", stats = { effect = "heal", amount = 3, widepupils = false, canOD = false } }, },
-    ]]
+    -- [[MULTIPLE BUSINESSES]]
+    -- Default
+    logger = { 		emote = "beer6", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    ambeer = { 		emote = "beer5", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    dusche = { 		emote = "beer4", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    pisswasser = {	emote = "beer1",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    pisswasser2 = {	emote = "beer2",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    pisswasser3 = {	emote = "beer3",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    cheesecake = {	emote = "donut",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    crisps = {		emote = "crisps",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chocolate = {	emote = "donut",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
 
-    --Testing effects & armor with small functionality to drugs - This may be another one left to default scripts
-    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -- BEAN MACHINE
+    bigfruit = {	emote = "bmcoffee1",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    highnoon = {	emote = "bmcoffee1",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    speedball = {	emote = "bmcoffee2",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    gunkaccino = {	emote = "bmcoffee2",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    bratte = {		emote = "bmcoffee2",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    flusher = {		emote = "bmcoffee3",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    ecocoffee = {	emote = "bmcoffee3",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    caffeagra = {	emote = "bmcoffee3",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    beandonut = {	emote = "donut2",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    watermelon = {	emote = "pineapple",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    orange = {		emote = "pineapple",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    milk = {		emote = "milk",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    chickenbreast = {	emote = "sandwich",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
 
-    --[[ --Testing effects & armor with small functionality to drugs - This may be another one left to default scripts
-    joint = { 			emote = "smoke3",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    -- BURGERSHOT
+    heartstopper = {	emote = "burger",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    torpedo = {		emote = "torpedo",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    shotfries = {	emote = "bsfries",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    meatfree = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    shotnuggets = {	emote = "bsfries",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    shotrings = {	emote = "bsfries",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    moneyshot = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    bleeder = {		emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    bscoffee = {	emote = "bscoffee",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    bscoke = {		emote = "bscoke",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    rimjob = {		emote = "donut",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    creampie = {	emote = "donut",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    cheesewrap = {	emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chickenwrap = {	emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    milkshake = {	emote = "milk",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
 
-    cokebaggy = { 		emote = "coke",		time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "focus", effect = "stamina", widepupils = false, canOD = true } },
-    --crackbaggy = { 		emote = "coke",		time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { effect = "heal", widepupils = false, canOD = true } },
-    xtcbaggy = { 		emote = "oxy",		time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { effect = "strength", widepupils = true, canOD = true } },
-    oxy = { 			emote = "oxy",		time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { effect = "heal", widepupils = false, canOD = false } },
-    meth = { 			emote = "coke",		time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { effect = "stamina", widepupils = false, canOD = true } },
-    ]]		----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -- Up-N-Atom
+    atomheartstopper = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    atomfries = {			emote = "bsfries",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    atomveggieburger = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    atomsubmarine = {		emote = "torpedo",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    atomzingerburger = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    atomsnacker = {		emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    atomsoftdrink = {		emote = "ecola",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    atommshake = {			emote = "milk",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    atomnuggets = {		emote = "bsfries",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    atomrings = {			emote = "bsfries",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
 
-    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -- UWU CAT CAFE
+    bmochi = {		emote = "uwu13",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    pmochi = {		emote = "uwu13",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    gmochi = {		emote = "uwu13",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    omochi = {		emote = "uwu13",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    miso = {		emote = "uwu10",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    cake = {		emote = "uwu5",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    bento = {		emote = "uwu7",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    riceball = {	emote = "uwu7",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    nekocookie = {	emote = "uwu6",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    nekodonut = {	emote = "uwu5",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    purrito = {		emote = "uwu8",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    cakepop = {		emote = "uwu11",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    pancake = {		emote = "uwu5",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    pizza = {		emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    noodlebowl = {	emote = "uwu9",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    noodles = {		emote = "uwu9",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    ramen = {		emote = "uwu7",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    bobatea = {		emote = "uwu12",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    bbobatea = {	emote = "uwu12",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    gbobatea = {	emote = "uwu12",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    pbobatea = {	emote = "uwu12",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    obobatea = {	emote = "uwu12",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    nekolatte = {	emote = "uwu1",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    catcoffee = {	emote = "uwu4",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    mocha = {		emote = "uwu2",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    sake = {		emote = "beer",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
 
-    --Example item
---    heartstopper = {
---        emote = "burger", 							-- Select an emote from below, it has to be in here
---        time = math.random(5000, 6000),				-- Amount of time it takes to consume the item
---        stress = math.random(1,2),					-- Amount of stress relief, can be 0
---        heal = 0, 									-- Set amount to heal by after consuming
---        armor = 5,									-- Amount of armor to add
---        type = "food",								-- Type: "alcohol" / "drink" / "food"
---        canRun = true,                                -- If true player can run while using the item, not to it will cancel the event
---
---        stats = {
---            screen = "thermal",						-- The screen effect to be played when after consuming the item "rampage" "turbo" "focus" "weed" "trevor" "nightvision" "thermal"
---            effect = "heal", 						    -- The status effect given by the item, "heal" / "stamina"
---                                                      -- This supports ps-buffs effects "armor" "stress" "swimming" "hacking" "intelligence" "luck" "strength"
---            time = 10000,							    -- How long the effect should last (if not added it will default to 10000)
---            amount = 6,								-- How much the value is changed by per second
---            hunger = math.random(10, 20),			    -- The hunger/thirst stats of the item, if not found in the items.lua
---            thirst = math.random(10, 20),			    -- The hunger/thirst stats of the item, if not found in the items.lua
---            canOD = true,                             -- This creates an OD Effect, killing the user if they have too much
---        },
---        --Reward Items Variables
---                                                      -- These can be the only thing in a consumable table and the item will still work
---        amounttogive = 3,							    -- Used for "RewardItems", tells the script how many to give
---        rewards = {
---            [1] = {
---                item = "plastic", 					-- prize item name
---                max = 10,							    -- max amount to give (this is put into math.random(1, max) )
---                rarity = 1,							-- the rarity system, 1 being rarest, 4 being most common
---            },
---        },
---    },
+    -- PIZZA THIS
+    amarone = { 	emote = "redwine", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    barbera = { 	emote = "redwine", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    dolceto = { 	emote = "redwine", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    housered = {	emote = "redwine",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    housewhite = {	emote = "whitewine",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    rosso = {		emote = "redwine",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    tiramisu = {	emote = "icream",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    gelato = {		emote = "icream",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    medfruits = {	emote = "icream",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    bolognese = {	emote = "foodbowl",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    calamari = {	emote = "foodbowl",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    meatball = {	emote = "foodbowl",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    alla = {		emote = "foodbowl",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    pescatore = {	emote = "foodbowl",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    capricciosa = {	emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    diavola = {		emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    marinara = {	emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    margherita = {	emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    prosciuttio = {	emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    vegetariana = {	emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
 
-    -- Example Box Item
---    ["9_box"] = {                                     -- Name of the box item in the shared
---        emote = "uncuff",                             -- The emote than should run when "unboxing"
---        canRun = true,                                -- If true player can run while using the item, not to it will cancel the event
---        time = 3500,                                  -- How long it takes to use the item
---        type = "pack",                                -- Designate it as a "pack" to the script knows what to do
---        pack = {
---            item = "9_ammo",                          -- The item to give from the box when complete
---            amount = 20                               -- How many of the item to give
---        },
---    },
+    -- UP-N-Aton / Hornys
+    atomsoda = { 			emote = "atomdrink", 	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    orangotang = { 			emote = "ecola", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    raine = { 				emote = "ecola", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    junkdrink = {			emote = "sprunk",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    creamyshake = {			emote = "milk",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+
+    tripleburger = {		emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    baconcheesemelt = {		emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chillidog = {			emote = "atomhotdog",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    atomfries = {			emote = "atomfries",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chickenfillet = {		emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chickenhorn = {			emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    grilledchicken = {		emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chickensalad = {		emote = "foodbowl",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    hunksohen = {			emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chickentaco = {			emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    enchiladas = {			emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    gazpacho = {			emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    hornbreakfast = {		emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    eggsbenedict = {		emote = "pizza",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    hashbrowns = {			emote = "breadslice",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    sausages = {			emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    baconroll = {			emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    baconeggtoast = {		emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    frenchtoast = {			emote = "breadslice",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    frenchtoastbacon = {	emote = "breadslice",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    hornburger = {			emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    dblhornburger = {		emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    baconhornburger = {		emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    picklehornburger = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chickenhornburger = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    dblchickenhornburger = { emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    icecone = {				emote = "milk",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    icenugget = {			emote = "milk",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    icecake = {				emote = "milk",			canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+
+    --VANILLA UNICORN
+        --Drink Ingredients
+    midori = { emote = "beer3", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    prosecco = { emote = "beer3", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    tequila = { emote = "beer3", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    triplsec = { emote = "beer3", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    gin = { emote = "ginb", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    rum = { emote = "rumb", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    amaretto = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    amarettosour = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    bellini = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    cosmopolitan = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    longisland = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    margarita = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    pinacolada = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    sangria = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    screwdriver = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    strawdaquiri = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    strawmargarita = { emote = "whiskey", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(40, 50), canOD = true }},
+    ambeer = { emote = "beer3", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    dusche = { emote = "beer1", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    logger = { emote = "beer2", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    pisswasser = { emote = "beer4", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    pisswasser2 = { emote = "beer5", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+    pisswasser3 = { emote = "beer6", canRun = true,  time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(10, 20), canOD = true }},
+        --Jim-VanillaUnicorn-Drinks
+    cranberry = { emote = "wine", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(20, 20), }},
+    pinejuice = { emote = "wine", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(40, 50), }},
+    ecola = { emote = "ecola", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+    ecolalight = { emote = "ecola", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+    sprunk = { emote = "sprunk", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+    sprunklight = { emote = "sprunk", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+        --Jim-VanillaUnicorn-Food
+    chocolate = { emote = "egobar", canRun = false, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10, 20), }},
+    crisps = { emote = "crisps", canRun = false, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(20, 30), }},
+    cubasil = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(20, 30), }},
+    mintleaf = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(20, 30), }},
+    peach = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(20, 30), }},
+    strawberry = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(20, 30), }},
+    chocolate = { emote = "egobar", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(20, 30), }},
+    nplate = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(40, 50), }},
+    vusliders = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(40, 50), }},
+    vutacos = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(40, 50), }},
+    tots = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(40, 50), }},
+    nachos = { emote = "burger", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(40, 50), }},
+
+    -- POPS DINER
+    ecolalight = {	emote = "ecola",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    ecola = {		emote = "ecola",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    sprunklight = {	emote = "sprunk",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    sprunk = {		emote = "sprunk",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    baconeggs = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    cheeseburger = {	emote = "burger",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    hamburger = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    sausageeggs = {	emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    steakburger = {	emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    bltsandwich = {	emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    cheesesandwich = {	emote = "sandwich",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    eggsandwich = {	emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    grilledwrap = {	emote = "torpedo",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    hamcheesesandwich = {	emote = "sandwich",	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    hamsandwich = {	emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    ranchwrap = {	emote = "torpedo",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    toastbacon = {	emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    tunasandwich = {	emote = "sandwich",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    veggiewrap = {	emote = "torpedo",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    carrotcake = {	emote = "icream",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    jelly = {		emote = "icream",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    chocpudding = {	emote = "icream",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    popdonut = {	emote = "icream",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    popicecream = {	emote = "icream",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+
+    -- TEQUILA-LA
+    b52 = {			emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    brussian = {	emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    bkamikaze = {	emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    cappucc = {		emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    ccookie = {		emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    iflag = {		emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    kamikaze = {	emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    sbullet = {		emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    voodoo = {		emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    woowoo = {		emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+
+    -- RCORE-CASINO
+        -- Casino Bar Drinks
+    casino_beer = { 		emote = "beer", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    casino_coke = {			emote = "ecola",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    casino_sprite = {		emote = "sprunk",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+    casino_luckypotion = {	emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    casino_coffee = { 		emote = "coffee", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", time = 10000, thirst = math.random(35,54), }},
+        -- Casino Bar Snacks
+    casino_burger = {			emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+    casino_psqs = { 		emote = "egobar", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(35,54), }},
+    casino_ego_chaser = { 	emote = "egobar", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(35,54), }},
+    casino_sandwitch = { 	emote = "sandwich", 	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(35,54), }},
+    casino_donut = {		emote = "donut",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+
+    --Jim-Bars
+    cranberry = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    schnapps = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    gin = {			emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    scotch = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    rum = {			emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    icream = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    amaretto = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    curaco = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+    
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    -- Envi-trap-phone
+    cokebaggy = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    coke_7g = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    coke_1oz = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    crack_baggy = { 	emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    crack_7g = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    crack_1oz = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    meth = { 			emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    meth_7g = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    meth_1oz = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    weedbaggy = { 		emote = "edibles",	time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    weed_7g = { 		emote = "edibles",	time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+    weed_1oz = { 		emote = "edibles",	time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo",   effect = "stamina", widepupils = false, canOD = true } },
+
+    -- Drugs
+    joint = { 			emote = "joint2",	time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed",    effect = "stamina", widepupils = false, canOD = false } },
+    xtcbaggy = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { effect = "strength", effect = "stamina", widepupils = false, canOD = true } },
+    oxy = { 			emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { effect = "heal",    effect = "stamina", widepupils = false, canOD = true } },
+    heroinbaggy = { 	emote = "heroin",	time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true } },
+    heroin_1oz = { 		emote = "heroin",	time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true } },
+    liquidheroin = { 	emote = "heroin",	time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true } },
+    -- morphine = { 		emote = "heroin",	time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true } },
+
+    --[[jixel-whitewidow]]
+        --Joints
+    afghankush_joint = {	emote = "joint",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    bluedream_joint = { 	emote = "joint",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    granddaddypurple_joint = { emote = "joint",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    greencrack_joint = { 	emote = "joint",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = math.random(1, 10), armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    jackherrer_joint = { 	emote = "joint",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    sourdiesel_joint = { 	emote = "joint",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    weddingcake_joint = { 	emote = "joint",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    whitewidow_joint = { 	emote = "joint",	time = math.random(5000, 6000), stress = math.random(12, 24), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+        --Edibles
+    gummy_rasberry = {		emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    gummy_blueberry = {		emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    gummy_grape = {			emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    gummy_applering = {		emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = math.random(1, 10), armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    edible_ricecrispy = {	emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    gummy_belt = {			emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    edible_snickerdoodle = {	emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    edible_peanutcookie = {	emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+    edible_cchip = {		emote = "edibles",	time = math.random(5000, 6000), stress = math.random(12, 24), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+        --Bong Smoking
+    afghankush_bud = {		emote = "bong",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false }, requiredItems = {"lighter", "bong"} },
+    bluedream_bud = {		emote = "bong",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false }, requiredItems = {"lighter", "bong"} },
+    granddaddypurple_bud = {	emote = "bong",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false }, requiredItems = {"lighter", "bong"} },
+    greencrack_bud = {		emote = "bong",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = math.random(1, 10), armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false }, requiredItems = {"lighter", "bong"} },
+    jackherrer_bud = {		emote = "bong",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false }, requiredItems = {"lighter", "bong"} },
+    sourdiesel_bud = {		emote = "bong",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false }, requiredItems = {"lighter", "bong"} },
+    weddingcake_bud = {		emote = "bong",	time = math.random(5000, 6000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false }, requiredItems = {"lighter", "bong"} },
+    whitewidow_bud = {		emote = "bong",	time = math.random(5000, 6000), stress = math.random(12, 24), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false }, requiredItems = {"lighter", "bong"} },    
 
 }
